@@ -3,9 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title>摸鱼❤</title>
-		
-		<script src="js/vue.global.js"></script>
-		<link rel="stylesheet" href="css/nidex.css">
 	</head>
 	
 	
@@ -15,8 +12,7 @@
 			<!-- 左侧 -->
 			<div>
 				<div @click="win()">Win10/11</div>
-				
-				<div>安卓</div>
+				<div @click="android()">安卓</div>
 			</div>
 					
 			<!-- 右侧  -->
@@ -24,43 +20,27 @@
 				{{ msg }}
 			</div>
 
-
+			<!-- Windows10/11 -->
 			<div id="win">
+				 <div class="container">
+				     <div class="loader">
+				         <span></span>
+				         <span></span>
+				         <span></span>
+				         <span></span>
+				         <span></span>
+				     </div>
+				 </div>
+			</div>
+			<div id="android">
 				
 			</div>
 
 		</div>
 	</body>
-	
-	
-	<script>
-		const Counter = {
-		  data() {
-		    return {
-		      counter: 0,
-			  msg:"这个是一个摸鱼Web",
-			  my:"摸鱼"
-		    }
-		  },
-		  methods: {
-		  	win() {
-				var element = document.getElementById('win');
-				if (element.requestFullscreen) {
-				    element.requestFullscreen();
-				} else if (element.mozRequestFullScreen) {
-				    element.mozRequestFullScreen();
-				} else if (element.msRequestFullscreen) {
-				    element.mozRequestFullScreen();
-				} else if (element.webkitRequestFullscreen) {
-				    element.webkitRequestFullScreen();
-				}
-			}
-			
-		  }
-		  
-		}
-		var vm = Vue.createApp(Counter).mount('#main')
-	</script>
-	
+
+	<script src="js/vue.global.js"></script>
+	<script src="js/myvuejs.js"></script>
+	<link rel="stylesheet" href="css/win.css">
 	
 </html>
