@@ -3,16 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<title>摸鱼❤</title>
+		<link rel="stylesheet" href="css/index.css">
 	</head>
-	
 	
 	<body>
 		<div id="main">
 			
 			<!-- 左侧 -->
 			<div>
-				<div @click="win()">Win10/11</div>
-				<div @click="android()">安卓</div>
+				<div class="button" @click="win()">Win10/11</div>
+				<div class="button" @click="android()">安卓</div>
 			</div>
 					
 			<!-- 右侧  -->
@@ -22,15 +22,18 @@
 
 			<!-- Windows10/11 -->
 			<div id="win">
-				 <div class="container">
-				     <div class="loader">
-				         <span></span>
-				         <span></span>
-				         <span></span>
-				         <span></span>
-				         <span></span>
-				     </div>
-				 </div>
+				<div class="loader">
+				    <span></span>
+				    <span></span>
+				    <span></span>
+				    <span></span>
+				    <span></span>
+				</div>
+				<div id="text">
+					<p>正在进行更新&nbsp;{{ loding }}%</p>
+					<p>请保持计算机打开状态</p>
+					<p class="text-bottom">计算机可能会重启几次</p>
+				</div>
 			</div>
 			<div id="android">
 				

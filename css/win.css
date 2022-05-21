@@ -1,12 +1,27 @@
-	#win {
-		font-size: 14px;
-		background-color: green;
-		font-family: 'Montserrat', sans-serif, Arial, 'Microsoft Yahei';
-	}
+#win {
+	display: none;
+	font-size: 14px;
+	background-color: black;
+	width: 500px;
+}
+
+#win #text{
+	color: #FFF;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 25px;
+	font-family: 'Montserrat', sans-serif, Arial, 'Microsoft Yahei';
+}
+#win #text .text-bottom{
+	margin-top: 220px;
+}
+
 	#win .loader {
+		display: block;
+		margin: 0 auto;
+		padding: 20% 0 0 0 ;
 		width: 100px;
 		height: 100px;
-		margin: 10px;
 	}
 
 	#win .loader span {
