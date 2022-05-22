@@ -1,20 +1,40 @@
 *{padding: 0;margin: 0;}
+html{
+	background:no-repeat linear-gradient(145deg,#dbebfa 0,#dbebfa 15%,#007fbd 15% ,#007fbd 25%,#00334e 25%,#00334e 35% ,#004d73 35%,#004d73 100%);
+	height: 100%;
+}
 #main{
 	height: 400px;
 	width: 700px;
 	margin: 10% auto 0 auto;
-	background-color: red;
-	border-radius: 40px;
-	border: 1px solid red;
+	background-color: #66ccff;
+	border-radius: 25px;
+	border: 5px solid red;
+	box-shadow: 8px 8px 5px darkgray;
 }
 .button{
 	width: 200px;
 	margin: 15px;
 	padding: 10px;
 	border-radius: 15px;
-	border: 1px solid red;
+	border: 1px solid darkgray;
 	font-weight: bold;
+	box-shadow: 2px 2px 2px darkgray;
 	text-align: center;
 	color: white;
 	background-color: darkblue;
+}
+
+#bottom{
+	width: 600px;
+	margin: 15px auto 0 auto;
+}
+#bottom a {
+	text-decoration: none;
+}
+#bottom a img{
+	width: 15px	;
+}
+#bottom a span{
+	color: darkgray;
 }
