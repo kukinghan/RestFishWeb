@@ -28,7 +28,7 @@ const Counter = {
 	},
 	//显示元素，尝试使用常用浏览器API全屏
 	fullScreen(element){
-		alert("鼠标藏好❤~点击esc键退出");
+		alert("鼠标藏好❤开始摸鱼~.点击esc键退出");
 		if (element.requestFullscreen) {
 			element.requestFullscreen();
 		} else if (element.mozRequestFullScreen) {
